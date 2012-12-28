@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        	<ImageView 
+        	    android:id="@+id/login_dialog_UserHead"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/ic_launcher"
+        	    />
+        	<TextView 
+        	    android:id="@+id/login_dialog_UserName"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:text="yangqinjiang"
+        	    android:layout_gravity="center"
+        	    />
+    </LinearLayout>
+    
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        >
+        	<Button 
+        	    android:id="@+id/login_dialog_btn_load"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="登录"
+        	    />
+        	<Button 
+        	    android:id="@+id/login_dialog_btn_cancel"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="取消"
+        	    />
+      </LinearLayout>
+</LinearLayout>

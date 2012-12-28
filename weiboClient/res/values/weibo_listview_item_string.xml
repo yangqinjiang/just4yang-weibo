@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="string_weibo_listview_item_created_at_txt">发表时间</string>
+    <string name="string_weibo_listview_item_text_txt">发表的微博内容</string>
+    <string name="string_weibo_listview_item_source_txt">新浪微博</string>
+    <string name="string_weibo_listview_item_reposts_count_txt">转发</string>
+    <string name="string_weibo_listview_item_collection_count_txt">收藏</string>
+    <string name="string_weibo_listview_item_comments_count_txt">评论</string>
+  
+    
+</resources>

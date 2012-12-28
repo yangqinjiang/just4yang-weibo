@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#80FFFFFF"
+    >
+    
+	<include layout="@layout/show_user_layout"
+	         android:id="@+id/show_friend_layoutID"
+	         android:layout_width="wrap_content"
+	         android:layout_alignParentTop="true"
+	         android:layout_height="wrap_content"/>
+       
+
+	<!-- 转发，评论，收藏按钮 -->
+    	<LinearLayout 
+    	    android:id="@+id/btns_weibo_text_activity"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:weightSum="3"
+    	    android:layout_alignParentBottom="true"
+    	    android:background="#80FFFF00">
+    	    <Button 
+    	        android:id="@+id/btnTransmit"
+    	        android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1.0"
+    	    android:gravity="center"
+    	    android:text="@string/transmit"/>
+    	     <Button 
+    	         android:id="@+id/btnComment"
+    	        android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1.0"
+    	    android:gravity="center"
+    	    android:text="@string/comment"/>
+    	      <Button 
+    	          android:id="@+id/btnFavorite"
+    	        android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1.0"
+    	    android:gravity="center"
+    	    android:text="@string/favorite"/>
+    	</LinearLayout>
+    	
+	<ScrollView
+	    android:layout_below="@id/show_friend_layoutID"
+	    android:layout_above="@id/btns_weibo_text_activity" 
+	    android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		>
+		    <LinearLayout 
+		        android:id="@+id/layout_weibo_text_activity"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:background="@drawable/chatfrom_bg_normal"
+		        >
+			    <TextView 
+			        android:id="@+id/text_weibo_text_activity"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/simple_weibo"/>
+			    
+				<ImageView 
+				    android:id="@+id/img_weibo_text_activity"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:contentDescription="@string/app_name"
+				    android:src="@drawable/car"/>
+	    	
+	    		    <LinearLayout 
+	    		        android:id="@+id/re_layout_weibo_text_activity"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:background="@drawable/chatfrom_bg_normal">
+				    
+				    <TextView 
+				        android:id="@+id/re_text_weibo_text_activity"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/simple_weibo"/>
+			    
+					<ImageView 
+					    android:id="@+id/re_img_weibo_text_activity"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:contentDescription="@string/app_name"
+					    android:src="@drawable/car"/>
+					</LinearLayout>
+				
+	    	</LinearLayout>
+	    	
+    	</ScrollView>
+    	
+	
+</RelativeLayout>

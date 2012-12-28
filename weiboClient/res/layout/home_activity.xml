@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+    <include android:id="@+id/layoutTitleBar"
+         layout="@layout/title_bar"
+         />
+	<include android:id="@+id/layoutLoadProgressBar"
+	     layout="@layout/load_progress_bar"/>
+	<ListView 
+	    android:id="@+id/weibo_listview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:dividerHeight="1dp"
+	    android:transcriptMode="alwaysScroll"
+	    android:cacheColorHint="#00000000"
+	    />
+</LinearLayout>

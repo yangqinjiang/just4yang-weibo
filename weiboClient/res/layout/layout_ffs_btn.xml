@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TableLayout 	    
+         		android:id="@+id/tlCount"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="#80ffffff">
+	        <TableRow >
+	             <!-- 关注好友的关注数  按钮 -->
+	            <Button 
+	                android:id="@+id/btnShowItsFriend"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="friends"
+	                />
+	             <!-- 关注好友的粉丝数  按钮 -->
+	            <Button 
+	                android:id="@+id/btnShowItsFollowers"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="followers"
+	                />
+	             <!-- 关注好友的微博数  按钮 -->
+	            <Button 
+	                android:id="@+id/btnShowItsStatus"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="status"
+	                />
+	        </TableRow>
+	        
+	    </TableLayout> 
+</LinearLayout>

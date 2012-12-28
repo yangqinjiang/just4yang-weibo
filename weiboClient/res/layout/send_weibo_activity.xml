@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView 
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="发送微博"
+        />
+    <EditText 
+        android:id="@+id/etWeiboContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="141"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:hint="请输入一些文字吧"
+        android:gravity="top"
+        />
+        <TextView 
+            android:id="@+id/tvWordNumber"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="还可以输入140字"
+        />
+        <LinearLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+		    <Button 
+		        android:id="@+id/btnSendWeibo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="发送"
+		        />
+		    <Button 
+		        android:id="@+id/btnShowEmotion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="表情"
+		        />
+	    </LinearLayout>
+	    <GridView 
+	        android:id="@+id/gvShowEmotion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:numColumns="5"
+		        android:background="#ffffff"
+	        ></GridView>
+
+</LinearLayout>

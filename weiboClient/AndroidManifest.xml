@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.yang.sina.weibo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+   
+
+    <!-- 自定一个App -->
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"  android:name="cn.yang.sina.weibo.beans.app.WeiboApp">
+            <activity 
+        	android:launchMode="singleTask"
+			android:configChanges="keyboardHidden|orientation"                           
+			android:windowSoftInputMode="adjustPan|stateAlwaysVisible" android:name="com.weibo.net.ShareActivity">
+		</activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ui.Logo" >
+                <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Login">
+        </activity>
+        <activity android:name=".ui.OAuthWebView" ></activity>
+        <!-- 发表微博的Activity -->
+        <activity android:name=".ui.SendWeiboActivity"></activity>
+        <activity android:name=".ui.JustForYangWeiBoActivity"></activity>
+        <activity
+            android:name=".ui.OAuthAccessTokenActivity">
+        </activity>
+       <activity android:name=".ui.MainActivity">
+       </activity>
+       <activity android:name=".ui.HomeActivity"></activity>
+       <activity android:name=".ui.MsgActivity"></activity>
+       <activity android:name=".ui.AtActivity"></activity>
+       <activity android:name=".ui.MoreActivity"></activity>
+       <activity android:name=".ui.WeiboTextActivity">
+           
+       </activity>
+        <activity android:name="cn.yang.youmi.ad.ADtestActivity">
+ 		  </activity>		  
+        <!-- AdActivity是广告详情展示的载体 -->
+        <activity android:name="net.youmi.android.AdActivity"
+ 				  android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <!-- Junit测试 
+        <uses-library android:name="Android.test.runner" /> -->
+        <service android:name=".logic.WeiBoService"></service>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission> 
+	<uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    
+	 <!--
+     android.permission.INTERNET,连接网络权限 INTERNET ，用于请求广告
+    android.permission.READ_PHONE_STATE,用于精确统计用户手机的系统信息
+    android.ACCESS_NETWORK_STATE,用于精确识别网络接入点等信息
+    android.permission.ACCESS_COARSE_LOCATION,有助于精准投放地域广告以及帮助统计使用应用程序的用户的地区分布情况
+    android.permission.WRITE_EXTERNAL_STORAGE,有助于实现图片资源的缓存,节省流量,并可获得更好的用户体验   -->
+ <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> 
+ <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission> 
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+     <supports-screens android:largeScreens="true"
+    android:normalScreens="true" android:smallScreens="true"
+    android:resizeable="true" android:anyDensity="true"/>
+   
+</manifest>

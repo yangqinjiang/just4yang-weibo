@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<ScrollView 
+	    android:layout_width ="fill_parent"
+        android:layout_height ="fill_parent"
+        android:scrollbars ="vertical"
+	    >
+	    	 <LinearLayout              
+                 android:layout_width ="fill_parent"
+                 android:layout_height ="wrap_content"
+                 android:orientation ="vertical">
+	    		<RelativeLayout
+                      android:layout_width ="fill_parent"
+                      android:layout_height ="wrap_content" >
+						<!-- 关注好友的头像 -->
+                        <ImageView android:id ="@+id/imgHeadOfFriendShow"
+                                android:layout_width ="wrap_content"
+                                android:layout_height ="wrap_content"
+                                android:src="@drawable/logo_64x64" />
+                        <!-- 关注好友是否有新浪认证 -->
+                        <ImageView
+                                android:id ="@+id/imgIsVOfFriend"
+                                android:layout_width ="wrap_content"
+                                android:layout_height ="wrap_content"
+                                android:scaleType ="fitStart"
+                                android:layout_alignTop ="@id/imgHeadOfFriendShow"
+                                android:layout_alignLeft ="@id/imgHeadOfFriendShow"
+                                android:src="@drawable/v" />
+                         <!-- 关注好友的性别 -->
+                         <ImageView
+	                         android:id ="@+id/imgGenderOfFriend"
+	                         android:layout_width ="wrap_content"
+	                         android:layout_height ="wrap_content"
+	                         android:scaleType ="fitStart"
+	                         android:layout_alignBottom = "@id/imgHeadOfFriendShow"
+	                         android:layout_alignRight ="@id/imgHeadOfFriendShow"
+	                         android:src ="@drawable/m" />
+
+                      </RelativeLayout>
+                      
+	    		<TableLayout 	    
+			        android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="#80ffffff">
+		   		<TableRow >
+		       <!-- 关注好友的关注数 -->
+		    	<TextView 
+		    	    	 android:id="@+id/tvFriendsCountOfFriend"
+		    		     android:layout_width="wrap_content"
+	                	 android:layout_height="wrap_content"
+	                	 android:layout_weight="1"
+	                	 android:gravity="center"
+	                 	 android:text="100"/>   
+	            <!-- 关注好友的粉丝数 --> 
+	            <TextView 
+	                	 android:id="@+id/tvFollowersCountOfFriend"
+		    		     android:layout_width="wrap_content"
+	                	 android:layout_height="wrap_content"
+	                	 android:layout_weight="1"
+	                	 android:gravity="center"
+	                 	 android:text="200"/>  
+	            <!-- 关注好友的微博数 -->
+	            <TextView 
+	                	 android:id="@+id/tvStatusesCountOfFriend"
+		    		     android:layout_width="wrap_content"
+	                	 android:layout_height="wrap_content"
+	                	 android:layout_weight="1"
+	                	 android:gravity="center"
+	                 	 android:text="300"/>  
+		   		</TableRow>
+		   </TableLayout>
+		   
+	    		<!-- 关注好友的昵称 -->
+                <TextView
+                      android:id ="@+id/tvNameOfFriend"
+                      android:layout_width ="wrap_content"
+                      android:layout_height ="wrap_content"
+                      android:layout_marginTop ="10dip" />
+                 <!-- 关注好友的地址 -->
+                 <TextView
+                      android:id ="@+id/tvLocationOfFriend"
+                      android:layout_width ="wrap_content"
+                      android:layout_height ="wrap_content"
+                      android:layout_marginTop ="10dip"/>
+                  <!-- 关注好友的个人描述 -->
+                  <TextView
+                      android:id ="@+id/tvDescriptionOfFriend"
+                      android:layout_width ="wrap_content"
+                      android:layout_height ="wrap_content"
+                      android:layout_marginTop ="10dip"
+                      android:drawableLeft ="@drawable/comment_icon" />
+                   <!-- 关注好友的最新微博数据 -->
+                   <TextView
+                      android:id = "@+id/tvNewestStatusOfFriend"
+                      android:layout_width ="wrap_content"
+                      android:layout_height ="wrap_content"/>
+	    		
+	    </LinearLayout>
+    </ScrollView>
+			   
+</LinearLayout>

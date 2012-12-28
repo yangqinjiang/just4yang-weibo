@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/login_parent"
+    android:layout_marginTop="5dip"
+    >
+
+    <Button 
+        android:id="@+id/login_btn_addUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="添加用户"/>
+  			<GridView
+  			    android:id="@+id/login_ShowUser_gridview"
+  			    android:layout_width="fill_parent"
+  			    android:layout_height="fill_parent"
+  			    android:numColumns="2" 
+  			     android:background="@drawable/main_bg"
+  			    />
+
+
+</LinearLayout>
